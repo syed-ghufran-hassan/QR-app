@@ -1,0 +1,28 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "inventory-app"
+client_id = "01c8027d74fea8182721882ab2d0d085"
+application_url = "https://because-classic-clinics-beijing.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://because-classic-clinics-beijing.trycloudflare.com/auth/callback",
+  "https://because-classic-clinics-beijing.trycloudflare.com/auth/shopify/callback",
+  "https://because-classic-clinics-beijing.trycloudflare.com/api/auth/callback",
+  "https://because-classic-clinics-beijing.trycloudflare.com/.shopify/graphiql/auth/callback"
+]
+
+[webhooks]
+api_version = "2023-10"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "quickstart-efc52a51.myshopify.com"
